@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 313,
+  "width": 254,
+  "hideSelection": true,
+  "fillHorizontally": true,
+  "formatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "sp-card-container"
+    },
+    "style": {
+      "padding": "0px",
+      "border-radius": "1px",
+      "align-items": "stretch",
+      "flex-direction": "row"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-bgColor-white sp-css-borderColor-neutralLight sp-card-borderHighlight sp-card-subContainer"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-previewColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-imageContainer"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "style": {
+                      "max-height": "90px"
+                    },
+                    "attributes": {
+                      "href": "[$Company_x0020_page]",
+                      "target": "'blank'",
+                      "class": "ms-bgColor-white sp-card-imagePreviewBackground"
+                    },
+                    "children": [
+                      {
+                        "elmType": "img",
+                        "style": {
+                          "display": "=if([$Logo] == '', 'none', '')",
+                          "max-width": "160px",
+                          "max-height": "90px"
+                        },
+                        "attributes": {
+                          "src": "=[$Logo.serverUrl] + [$Logo.serverRelativeUrl]",
+                          "title": "[$Logo.fileName]",
+                          "class": "sp-card-imagePreview"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-displayColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "a",
+                "attributes": {
+                  "title": "[$field_URL]",
+                  "target": "'_blank",
+                  "href": "='https://www.' +[$field_URL]",
+                  "class": "ms-fontColor-themeDarkAlt sp-card-content "
+                },
+                "txtContent": "=if ([$field_URL] == '', '–', [$field_URL])"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "height": "200px"
+            },
+            "attributes": {
+              "class": "sp-card-lastTextColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "word-break": "normal",
+                  "height": "108px"
+                },
+                "attributes": {
+                  "title": "[$field_One_x0020_liner]",
+                  "class": " ms-fontColor-neutralPrimary  "
+                },
+                "txtContent": "=if ([$field_One_x0020_liner] == '', '–', [$field_One_x0020_liner])"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "height": "40px"
+            },
+            "attributes": {
+              "class": "sp-card-lastTextColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "[!Focus_x0020_area.DisplayName]"
+              },
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-content "
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "txtContent": "=if(length([$Focus_x0020_area]) == 0, '-', '')"
+                  },
+                  {
+                    "forEach": "lookupIterator in [$Focus_x0020_area]",
+                    "elmType": "a",
+                    "attributes": {
+                      "class": "ms-fontColor-neutralPrimary  sp-card-lookupInlineValues "
+                    },
+                    "txtContent": "[$lookupIterator.lookupValue]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
