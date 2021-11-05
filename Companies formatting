@@ -53,8 +53,8 @@
                           "max-height": "90px"
                         },
                         "attributes": {
-                          "src": "=[$Logo.serverUrl] + [$Logo.serverRelativeUrl]",
-                          "title": "[$Logo.fileName]",
+                          "src": "='https://mandtbank.sharepoint.com/:i:/r/sites/Insider_FintechEcosystem/SiteAssets/Company%20logos/' + [$Title] +'.png'",
+                          "title": "=[$Title] + ' page'",
                           "class": "sp-card-imagePreview"
                         }
                       }
