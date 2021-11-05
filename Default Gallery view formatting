@@ -1,0 +1,250 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 473,
+  "width": 254,
+  "hideSelection": false,
+  "fillHorizontally": true,
+  "formatter": {
+    "elmType": "div",
+    "attributes": {
+      "class": "sp-card-container"
+    },
+    "children": [
+      {
+        "elmType": "button",
+        "attributes": {
+          "class": "sp-card-defaultClickButton",
+          "role": "presentation"
+        },
+        "customRowAction": {
+          "action": "defaultClick"
+        }
+      },
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-bgColor-white sp-css-borderColor-neutralLight sp-card-borderHighlight sp-card-subContainer"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-previewColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "attributes": {
+                  "class": "sp-card-imageContainer"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "attributes": {
+                      "class": "ms-bgColor-neutralLight sp-card-imagePreviewBackground"
+                    },
+                    "children": [
+                      {
+                        "elmType": "img",
+                        "style": {
+                          "display": "=if([$Logo] == '', 'none', '')"
+                        },
+                        "attributes": {
+                          "src": "=[$Logo.serverUrl] + [$Logo.serverRelativeUrl]",
+                          "title": "[$Logo.fileName]",
+                          "class": "sp-card-imagePreview"
+                        }
+                      },
+                      {
+                        "elmType": "svg",
+                        "style": {
+                          "display": "=if([$Logo] == '', '', 'none')"
+                        },
+                        "attributes": {
+                          "preserveAspectRatio": "none",
+                          "viewBox": "0 0 210 105",
+                          "class": "sp-card-defaultImage ms-bgColor-themeLighter"
+                        },
+                        "children": [
+                          {
+                            "elmType": "path",
+                            "attributes": {
+                              "id": "sp-card-defaultImage-path1",
+                              "d": "M0 25.7896L126.5 53.8817L96 105H0V25.7896Z"
+                            }
+                          },
+                          {
+                            "elmType": "path",
+                            "attributes": {
+                              "id": "sp-card-defaultImage-path2",
+                              "d": "M96 105L158.7 0H204C207.314 0 210 2.68629 210 6V105H96Z"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "elmType": "svg",
+                        "style": {
+                          "display": "=if([$Logo] == '', '', 'none')"
+                        },
+                        "attributes": {
+                          "class": "sp-card-defaultImageOverlay",
+                          "viewBox": "0 0 40 40"
+                        },
+                        "children": [
+                          {
+                            "elmType": "path",
+                            "attributes": {
+                              "id": "sp-card-defaultImageOverlay-path1",
+                              "d": "M 4 4 H 37 V 37 H 4 L 4 4"
+                            }
+                          },
+                          {
+                            "elmType": "path",
+                            "attributes": {
+                              "id": "sp-card-defaultImageOverlay-path2",
+                              "d": "M24.17 21.151L21.66 24.741L17.54 19.191C17.3322 18.914 17.0062 18.751 16.66 18.751C16.3137 18.751 15.9877 18.914 15.78 19.191L9.20997 28.051C8.97126 28.3786 8.93818 28.813 9.12453 29.173C9.31088 29.533 9.68465 29.7567 10.09 29.751H29.91C30.3085 29.7562 30.6769 29.5396 30.866 29.1887C31.0551 28.8378 31.0335 28.411 30.81 28.081L26 21.151C25.7991 20.8407 25.4546 20.6533 25.085 20.6533C24.7153 20.6533 24.3709 20.8407 24.17 21.151Z"
+                            }
+                          },
+                          {
+                            "elmType": "path",
+                            "attributes": {
+                              "id": "sp-card-defaultImageOverlay-path3",
+                              "d": "M28 15.751C29.3807 15.751 30.5 14.6317 30.5 13.251C30.5 11.8703 29.3807 10.751 28 10.751C26.6193 10.751 25.5 11.8703 25.5 13.251C25.5 14.6317 26.6193 15.751 28 15.751Z"
+                            }
+                          },
+                          {
+                            "elmType": "path",
+                            "attributes": {
+                              "id": "sp-card-defaultImageOverlay-path4",
+                              "d": "M4.5 37.251H35.5C36.3284 37.251 37 36.5794 37 35.751V4.75098C37 3.92255 36.3284 3.25098 35.5 3.25098H4.5C3.67157 3.25098 3 3.92255 3 4.75098V35.751C3 36.5794 3.67157 37.251 4.5 37.251ZM4 4.75098C4 4.47483 4.22386 4.25098 4.5 4.25098H35.5C35.7761 4.25098 36 4.47483 36 4.75098V35.751C36 36.0271 35.7761 36.251 35.5 36.251H4.5C4.22386 36.251 4 36.0271 4 35.751V4.75098Z"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-displayColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "[!Title.DisplayName]"
+              },
+              {
+                "elmType": "p",
+                "attributes": {
+                  "title": "[$Title]",
+                  "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-highlightedContent"
+                },
+                "txtContent": "=if ([$Title] == '', '–', [$Title])"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-displayColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "[!field_One_x0020_liner.DisplayName]"
+              },
+              {
+                "elmType": "p",
+                "attributes": {
+                  "title": "[$field_One_x0020_liner]",
+                  "class": "ms-fontColor-neutralPrimary sp-card-content "
+                },
+                "txtContent": "=if ([$field_One_x0020_liner] == '', '–', [$field_One_x0020_liner])"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-displayColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "[!field_Description.DisplayName]"
+              },
+              {
+                "elmType": "p",
+                "attributes": {
+                  "title": "[$field_Description]",
+                  "class": "ms-fontColor-neutralPrimary sp-card-content "
+                },
+                "txtContent": "=if ([$field_Description] == '', '–', [$field_Description])"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-displayColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "[!field_URL.DisplayName]"
+              },
+              {
+                "elmType": "p",
+                "attributes": {
+                  "title": "[$field_URL]",
+                  "class": "ms-fontColor-neutralPrimary sp-card-content "
+                },
+                "txtContent": "=if ([$field_URL] == '', '–', [$field_URL])"
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "attributes": {
+              "class": "sp-card-lastTextColumnContainer"
+            },
+            "children": [
+              {
+                "elmType": "p",
+                "attributes": {
+                  "class": "ms-fontColor-neutralSecondary sp-card-label"
+                },
+                "txtContent": "[!field_Founded.DisplayName]"
+              },
+              {
+                "elmType": "p",
+                "attributes": {
+                  "title": "=if ([$field_Founded.displayValue] == '', '–', [$field_Founded.displayValue])",
+                  "class": "ms-fontColor-neutralPrimary sp-card-content "
+                },
+                "txtContent": "=if ([$field_Founded.displayValue] == '', '–', [$field_Founded.displayValue])"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
