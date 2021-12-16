@@ -48,7 +48,6 @@
                       {
                         "elmType": "img",
                         "style": {
-                          "display": "=if([$Logo] == '', 'none', '')",
                           "max-width": "160px",
                           "max-height": "90px"
                         },
