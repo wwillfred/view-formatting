@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
-  "height": 60,
+  "height": 65,
   "width": 200,
   "hideSelection": false,
   "fillHorizontally": true,
