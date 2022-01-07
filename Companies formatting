@@ -84,17 +84,17 @@
           {
             "elmType": "div",
             "style": {
-              "height": "200px"
+              "height": "150px"
             },
             "attributes": {
-              "class": "sp-card-lastTextColumnContainer"
+              "class": "sp-card-displayColumnContainer"
             },
             "children": [
               {
                 "elmType": "div",
                 "style": {
                   "word-break": "normal",
-                  "height": "108px"
+                  "height": "80px"
                 },
                 "attributes": {
                   "title": "[$field_One_x0020_liner]",
@@ -107,10 +107,11 @@
           {
             "elmType": "div",
             "style": {
-              "height": "40px"
+              "height": "62px",
+              "word-break": "normal"
             },
             "attributes": {
-              "class": "sp-card-lastTextColumnContainer"
+              "class": "sp-card-displayColumnContainer"
             },
             "children": [
               {
@@ -123,7 +124,7 @@
               {
                 "elmType": "div",
                 "attributes": {
-                  "class": "sp-card-content "
+                  "class": "sp-card-displayColumnContainer"
                 },
                 "children": [
                   {
@@ -132,9 +133,9 @@
                   },
                   {
                     "forEach": "lookupIterator in [$Focus_x0020_area]",
-                    "elmType": "a",
+                    "elmType": "div",
                     "attributes": {
-                      "class": "ms-fontColor-neutralPrimary  sp-card-lookupInlineValues "
+                      "class": "ms-fontColor-neutralPrimary"
                     },
                     "txtContent": "[$lookupIterator.lookupValue]"
                   }
