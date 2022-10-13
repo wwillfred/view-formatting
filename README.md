@@ -5,3 +5,5 @@ There are two lists with views here:
   2. [Companies](<Companies%20formatting>)
 
 I've also included the [default "Gallery View" formatting](<Default%20Gallery%20view%20formatting>) as a reference to what SharePoint ships with.
+
+To use these view formats, edit your SharePoint page and navigate to the list view. You will see the JSON notation for the default formatting - simply replace that default formatting with the custom formatting in one of these lists and save.
