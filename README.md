@@ -4,3 +4,4 @@ There are two lists with views here:
   1. [Focus areas](<Focus%20areas%20formatting>)
   2. [Companies](<Companies%20formatting>)
 
+I've also included the [default "Gallery View" formatting](<Default Gallery View formatting>) as a reference to what SharePoint ships with.
